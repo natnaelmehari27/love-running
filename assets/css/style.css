@@ -1,0 +1,19 @@
+/* Astrisk Wildcard selector to overide default sztyles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: lightcoral;
+}
+/* main Content */
+main {
+    background-color: lightblue;
+}
+/* footer */
+footer {
+    background-color: orange;
+}
