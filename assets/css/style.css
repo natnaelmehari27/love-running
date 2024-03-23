@@ -1,4 +1,3 @@
-
 /* Asterisk wildcard selector to override default styles */
 * {
     padding: 0;
@@ -23,6 +22,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -50,12 +52,14 @@ h1 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* Main Content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus to push footer down */
     flex: 1 0 auto;
 }
+
 /* navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -65,10 +69,24 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
 }
 
 /* Footer */
 footer {
     background-color: orange;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap')
