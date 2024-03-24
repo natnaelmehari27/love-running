@@ -207,6 +207,15 @@ hr {
     color: #3a3a3a;
 }
 
+/* Media query: larger or landscape phone (576px & up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -266,6 +275,9 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media query: laptop and larger (992px and up) */
@@ -301,6 +313,9 @@ hr {
 
     #benefits-physical>div {
         align-self: flex-end;
+    }
+    #photos {
+        column-count: 4;
     }
 }
 
