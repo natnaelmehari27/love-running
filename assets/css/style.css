@@ -15,7 +15,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -47,7 +49,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -80,6 +82,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /* Main Content */
 main {
     /* Make main element take up any surplus to push footer down */
@@ -92,6 +95,7 @@ main {
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
+
 #cover-text {
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
@@ -102,7 +106,9 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text > h2, #cover-text > h3 {
+
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -111,13 +117,14 @@ main {
     margin: 20 auto;
 }
 
-#reasons  h2 {
+#reasons h2 {
     font-size: 280%;
     margin-bottom: 20px;
     text-align: center;
 }
 
-#benefits-physical > div, #benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -132,7 +139,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url(../images/reasons-image.webp) no-repeat top center/cover ;
+    background: url(../images/reasons-image.webp) no-repeat top center/cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
@@ -148,6 +155,29 @@ hr {
     justify-content: center;
 }
 
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide. each div will expand to fill the available space onite row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* creates a grip of meetup time dives over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /* Override the heading color set in general styles */
+    color: #fafafa;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -156,13 +186,16 @@ hr {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -171,41 +204,51 @@ hr {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
-    #menu > li {
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
+
     #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
     /* Main content */
     main {
         /*push main content down to accomodate larger header */
         margin-top: 79px;
     }
+
     /* hero */
     #cover-text {
         width: 300px;
         right: 50px;
     }
-    /* reasons section */ 
-    #benefits-physical, #benefits-mental {
+
+    /* reasons section */
+    #benefits-physical,
+    #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    #benefits-physical > div, 
-    #benefits-mental > div {
+
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
-    #benefits-mental > div {
+
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
@@ -217,26 +260,34 @@ hr {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
 @media screen and (min-width: 1200px) {
+
     /* reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
-    #benefits > div {
+
+    #benefits>div {
         flex: 1;
     }
+
     #benefits-image {
         order: 0;
     }
+
     #benefits-mental {
         order: 1;
     }
-    #benefits-mental > div {
+
+    #benefits-mental>div {
         align-self: flex-start;
     }
-    #benefits-physical >  div {
+
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap')
